@@ -1,4 +1,5 @@
 🎮 Projeto de Integração – Roblox
+Nome da equipe: Farmadores
 
 Este repositório foi criado para apresentar nosso Projeto de Integração, cujo tema principal é o Roblox. O trabalho tem como objetivo explorar o universo do jogo, apresentando suas características e possibilidades de forma criativa e colaborativa.
 
