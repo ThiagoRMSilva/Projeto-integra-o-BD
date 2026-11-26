@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Respostas{% endblock %}
+
+{% block content %}
+<h1>Respostas</h1>
+
+{% for r in respostas %}
+<div class="resposta">
+    <h2>{{ r.nome }}</h2>
+    <p><b>1. {{ perguntas[0] }}</b><br>{{ r.resposta1 }}</p>
+    <p><b>2. {{ perguntas[1] }}</b><br>{{ r.resposta2 }}</p>
+    <p><b>3. {{ perguntas[2] }}</b><br>{{ r.resposta3 }}</p>
+    <form method="post" action="{{ url_for('excluir', id=r.id) }}">
+        <button type="submit">Excluir</button>
+    </form>
+</div>
+{% else %}
+<p>Ainda não há respostas.</p>
+{% endfor %}
+{% endblock %}

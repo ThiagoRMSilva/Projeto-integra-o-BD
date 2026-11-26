@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Roblox{% endblock %}
+
+{% block content %}
+<h1>Roblox</h1>
+<p>O Roblox é uma plataforma on-line de jogos que permite aos usuários jogar, 
+    criar e compartilhar experiências virtuais. Muito popular entre crianças e adolescentes, 
+    estimula a criatividade e o raciocínio lógico, mas também apresenta riscos, 
+    como conteúdos inadequados e contato com desconhecidos. Por isso, 
+    é importante conhecer a plataforma e utilizá-la com segurança e responsabilidade.
+
+
+.</p>
+<p>Nesta pesquisa você responde 3 perguntas sobre o jogo e depois pode ver as respostas de todo mundo.</p>
+<a href="{{ url_for('cadastro') }}">Responder a pesquisa</a>
+{% endblock %}

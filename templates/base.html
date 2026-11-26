@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Meu App{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <a href="{{ url_for('index') }}">Início</a>
+        <a href="{{ url_for('cadastro') }}">Responder</a>
+        <a href="{{ url_for('listar') }}">Respostas</a>
+    </nav>
+
+    <!-- Conteúdo específico da página será inserido aqui -->
+    {% block content %}{% endblock %}
+</body>
+</html>

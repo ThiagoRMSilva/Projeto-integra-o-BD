@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}Responder{% endblock %}
+
+{% block content %}
+<h1>Responder a pesquisa</h1>
+
+<form method="post">
+    <label>Seu nome</label>
+    <input type="text" name="nome" required>
+
+    {% for p in perguntas %}
+    <label>{{ loop.index }}. {{ p }}</label>
+    <textarea name="resposta{{ loop.index }}" required></textarea>
+    {% endfor %}
+
+    <button type="submit">Salvar</button>
+</form>
+{% endblock %}
